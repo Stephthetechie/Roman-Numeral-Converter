@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Roman Numeral Converter</title>
+</head>
+<body>
+    <input type="checkbox" name="checkbox" id="check">
+            <label for="check" class="checkbox">
+                <i class="fas fa-bars"></i>
+            </label>
+        <aside id="sidebar">
+            <ul class="aside-list">
+                <li> <div class="how-to">
+                    <details>
+                        <summary>
+                            <!-- <i class="fas fa-bars"></i> -->
+                            <div class="svg-icon">
+                                <svg class="svg-plus active" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                                <svg class="svg-x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="5" x2="19" y2="19" />
+                                    <line x1="19" y1="5" x2="5" y2="19" />
+                                </svg>
+                            </div>
+                            How to convert</summary>
+                            <li><p>Enter a number in the input field and click on the convert button to convert the number to a roman numeral.</p></li>
+                            <li><p>Click on the history button to view the history of the conversions.</p></li>
+                </div>
+                    </details>
+                </li>
+                <li>
+                    <div class="history">
+                        <details>
+                            <summary>
+                                <div class="svg-icon">
+                                    <svg class="svg-plus active" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                    <svg class="svg-x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="5" x2="19" y2="19" />
+                                        <line x1="19" y1="5" x2="5" y2="19" />
+                                    </svg>
+                                </div>
+                                
+                                History</summary>
+                        <ul id="history-list">
+                        </ul>
+                        </details>
+                    </div>
+                </li>
+            </ul>
+            </aside>
+            
+
+   <main>
+    <div class="heading">
+        <h1 id="title">Roman Numeral Converter</h1>
+    </div>
+    <div class="container">
+        <h2>Enter a number</h2>
+        <div class="input-container">
+            <input type="number" id="number" placeholder="Enter a number">
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <div class="output-container">
+        <p id="output"></p>
+    </div>
+    
+   </main>
+   
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
